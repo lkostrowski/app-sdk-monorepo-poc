@@ -1,0 +1,149 @@
+{
+  "name": "@saleor/app-sdk",
+  "version": "0.25.0",
+  "description": "SDK for building great Saleor Apps",
+  "types": "index.d.ts",
+  "main": "index.js",
+  "scripts": {
+    "prepublishOnly": "pnpm build",
+    "watch": "tsup --watch",
+    "build": "tsup && clear-package-json package.json -o dist/package.json --fields publishConfig && pnpm copy-readme",
+    "clean": "rm -rf ./dist/*",
+    "test": "vitest",
+    "test:ci": "CI=true vitest --coverage",
+    "lint": "prettier --loglevel warn --write . && eslint --fix .",
+    "release": "release-it",
+    "copy-readme": "cp README.md dist/README.md"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "next": ">=12",
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "dependencies": {
+    "debug": "^4.3.4",
+    "fast-glob": "^3.2.11",
+    "graphql": "^16.6.0",
+    "jose": "^4.9.2",
+    "node-fetch": "^2.6.7",
+    "raw-body": "^2.5.1",
+    "retes": "^0.33.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^8.17.1",
+    "@testing-library/react": "^13.4.0",
+    "@types/debug": "^4.1.7",
+    "@types/node": "^18.7.15",
+    "@types/node-fetch": "^2.6.2",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "^18.0.5",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "@vitejs/plugin-react": "^2.1.0",
+    "@vitest/coverage-c8": "^0.23.2",
+    "clean-publish": "^4.0.1",
+    "eslint": "8.23.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.6",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "husky": "^8.0.1",
+    "jsdom": "^20.0.3",
+    "lint-staged": "^13.0.3",
+    "next": "^12.3.0",
+    "node-mocks-http": "^1.11.0",
+    "prettier": "2.7.1",
+    "react": "^18.2.0",
+    "react-dom": "18.2.0",
+    "release-it": "^15.4.1",
+    "tsm": "^2.2.2",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.2",
+    "vi-fetch": "^0.8.0",
+    "vite": "^3.2.5",
+    "vitest": "^0.25.6"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": "eslint --cache --fix",
+    "*.{js,ts,tsx,css,md,json}": "prettier --write"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    "./const": {
+      "types": "./const.d.ts",
+      "import": "./const.mjs",
+      "require": "./const.js"
+    },
+    "./APL": {
+      "types": "./APL/index.d.ts",
+      "import": "./APL/index.mjs",
+      "require": "./APL/index.js"
+    },
+    "./settings-manager": {
+      "types": "./settings-manager/index.d.ts",
+      "import": "./settings-manager/index.mjs",
+      "require": "./settings-manager/index.js"
+    },
+    "./middleware": {
+      "types": "./middleware/index.d.ts",
+      "import": "./middleware/index.mjs",
+      "require": "./middleware/index.js"
+    },
+    "./urls": {
+      "types": "./urls.d.ts",
+      "import": "./urls.mjs",
+      "require": "./urls.js"
+    },
+    "./app-bridge": {
+      "types": "./app-bridge/index.d.ts",
+      "import": "./app-bridge/index.mjs",
+      "require": "./app-bridge/index.js"
+    },
+    "./app-bridge/next": {
+      "types": "./app-bridge/next/index.d.ts",
+      "import": "./app-bridge/next/index.mjs",
+      "require": "./app-bridge/next/index.js"
+    },
+    "./util": {
+      "types": "./util/index.d.ts",
+      "import": "./util/index.mjs",
+      "require": "./util/index.js"
+    },
+    "./handlers/next": {
+      "types": "./handlers/next/index.d.ts",
+      "import": "./handlers/next/index.mjs",
+      "require": "./handlers/next/index.js"
+    },
+    "./saleor-app": {
+      "types": "./saleor-app.d.ts",
+      "import": "./saleor-app.mjs",
+      "require": "./saleor-app.js"
+    },
+    "./infer-webhooks": {
+      "types": "./infer-webhooks.d.ts",
+      "import": "./infer-webhooks.mjs",
+      "require": "./infer-webhooks.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saleor/saleor-app-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saleor/saleor-app-sdk/issues"
+  },
+  "homepage": "https://github.com/saleor/saleor-app-sdk#readme"
+}

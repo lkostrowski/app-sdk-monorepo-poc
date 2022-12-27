@@ -1,0 +1,14 @@
+{
+  "github": {
+    "release": true,
+    "draft": true,
+    "releaseName": "${version}"
+  },
+  "npm": {
+    "publish": true,
+    "publishPath": "./dist"
+  },
+  "hooks": {
+    "after:bump": ["pnpm clean", "pnpm build"]
+  }
+}
