@@ -1,4 +1,4 @@
-import { AppBridge, AppIframeParams, DashboardEventFactory } from "@saleor/app-sdk/src/app-bridge";
+import { AppBridge, AppIframeParams, DashboardEventFactory } from "@saleor/app-sdk/app-bridge";
 import { fireEvent, render, renderHook, waitFor } from "@testing-library/react";
 import * as React from "react";
 import { describe, expect, it, vi } from "vitest";

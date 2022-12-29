@@ -1,4 +1,4 @@
-import { createAuthenticatedFetch } from "@saleor/app-sdk/src/app-bridge";
+import { createAuthenticatedFetch } from "@saleor/app-sdk/app-bridge";
 import { useAppBridge } from "./app-bridge-provider";
 
 export * from "./app-bridge-provider";
