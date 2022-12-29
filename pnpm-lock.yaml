@@ -109,7 +109,7 @@ importers:
   packages/app-sdk-next:
     specifiers:
       '@saleor/app-sdk': workspace:*
-      '@saleor/app-sdk-next': workspace:*
+      '@saleor/app-sdk-react': workspace:*
       '@testing-library/dom': ^8.17.1
       '@testing-library/react': ^13.4.0
       '@types/debug': ^4.1.7
@@ -166,7 +166,7 @@ importers:
       uuid: 8.3.2
     devDependencies:
       '@saleor/app-sdk': link:../app-sdk
-      '@saleor/app-sdk-next': 'link:'
+      '@saleor/app-sdk-react': link:../app-sdk-react
       '@testing-library/dom': 8.19.1
       '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
       '@types/debug': 4.1.7

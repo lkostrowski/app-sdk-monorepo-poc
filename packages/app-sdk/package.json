@@ -7,7 +7,7 @@
   "scripts": {
     "prepublishOnly": "pnpm build",
     "watch": "tsup --watch",
-    "build": "tsup && clear-package-json package.json -o dist/package.json --fields publishConfig && pnpm copy-readme",
+    "build": "tsup && clear-package-json package.json -o dist/package.json --fields publishConfig",
     "clean": "rm -rf ./dist/*",
     "test": "vitest",
     "test:ci": "CI=true vitest --coverage",

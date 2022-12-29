@@ -1,11 +1,9 @@
+import { AppBridge, AppIframeParams, DashboardEventFactory } from "@saleor/app-sdk/src/app-bridge";
 import { fireEvent, render, renderHook, waitFor } from "@testing-library/react";
 import * as React from "react";
 import { describe, expect, it, vi } from "vitest";
 
-import { AppBridge } from "./app-bridge";
 import { AppBridgeProvider, useAppBridge } from "./app-bridge-provider";
-import { AppIframeParams } from "./app-iframe-params";
-import { DashboardEventFactory } from "./events";
 
 const origin = "http://example.com";
 const domain = "saleor.domain.host";
