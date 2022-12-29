@@ -2,11 +2,11 @@
   "name": "@saleor/app-sdk-next",
   "version": "0.25.0",
   "description": "SDK for building great Saleor Apps",
-  "types": "index.d.ts",
-  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
   "scripts": {
     "prepublishOnly": "pnpm build",
-    "watch": "tsup --watch",
+    "dev": "tsup --watch",
     "build": "tsup && clear-package-json package.json -o dist/package.json --fields publishConfig",
     "clean": "rm -rf ./dist/*",
     "test": "vitest",
@@ -80,60 +80,10 @@
   },
   "exports": {
     "./package.json": "./package.json",
-    "./const": {
-      "types": "./const.d.ts",
-      "import": "./const.mjs",
-      "require": "./const.js"
-    },
-    "./APL": {
-      "types": "./APL/index.d.ts",
-      "import": "./APL/index.mjs",
-      "require": "./APL/index.js"
-    },
-    "./settings-manager": {
-      "types": "./settings-manager/index.d.ts",
-      "import": "./settings-manager/index.mjs",
-      "require": "./settings-manager/index.js"
-    },
-    "./middleware": {
-      "types": "./middleware/index.d.ts",
-      "import": "./middleware/index.mjs",
-      "require": "./middleware/index.js"
-    },
-    "./urls": {
-      "types": "./urls.d.ts",
-      "import": "./urls.mjs",
-      "require": "./urls.js"
-    },
-    "./app-bridge": {
-      "types": "./app-bridge/index.d.ts",
-      "import": "./app-bridge/index.mjs",
-      "require": "./app-bridge/index.js"
-    },
-    "./app-bridge/next": {
-      "types": "./app-bridge/next/index.d.ts",
-      "import": "./app-bridge/next/index.mjs",
-      "require": "./app-bridge/next/index.js"
-    },
-    "./util": {
-      "types": "./util/index.d.ts",
-      "import": "./util/index.mjs",
-      "require": "./util/index.js"
-    },
-    "./handlers/next": {
-      "types": "./handlers/next/index.d.ts",
-      "import": "./handlers/next/index.mjs",
-      "require": "./handlers/next/index.js"
-    },
-    "./saleor-app": {
-      "types": "./saleor-app.d.ts",
-      "import": "./saleor-app.mjs",
-      "require": "./saleor-app.js"
-    },
-    "./infer-webhooks": {
-      "types": "./infer-webhooks.d.ts",
-      "import": "./infer-webhooks.mjs",
-      "require": "./infer-webhooks.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
     }
   },
   "publishConfig": {

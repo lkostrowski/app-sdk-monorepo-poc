@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { useAppBridge } from "@saleor/app-sdk/app-bridge";
+import { useAppBridge } from "@saleor/app-sdk-react";
 import { Button } from "@saleor/macaw-ui";
 import dynamic from "next/dynamic";
 import { MouseEventHandler, useEffect, useState } from "react";

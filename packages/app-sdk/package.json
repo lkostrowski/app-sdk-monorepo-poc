@@ -2,11 +2,11 @@
   "name": "@saleor/app-sdk",
   "version": "0.25.0",
   "description": "SDK for building great Saleor Apps",
-  "types": "index.d.ts",
-  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
   "scripts": {
     "prepublishOnly": "pnpm build",
-    "watch": "tsup --watch",
+    "dev": "tsup --watch",
     "build": "tsup && clear-package-json package.json -o dist/package.json --fields publishConfig",
     "clean": "rm -rf ./dist/*",
     "test": "vitest",
@@ -77,61 +77,61 @@
     "*.{js,ts,tsx,css,md,json}": "prettier --write"
   },
   "exports": {
-    "./package.json": "./package.json",
+    "./package.json": "./dist/package.json",
     "./const": {
-      "types": "./const.d.ts",
-      "import": "./const.mjs",
-      "require": "./const.js"
+      "types": "./dist/const.d.ts",
+      "import": "./dist/const.mjs",
+      "require": "./dist/const.js"
     },
     "./APL": {
-      "types": "./APL/index.d.ts",
-      "import": "./APL/index.mjs",
-      "require": "./APL/index.js"
+      "types": "./dist/APL/index.d.ts",
+      "import": "./dist/APL/index.mjs",
+      "require": "./dist/APL/index.js"
     },
     "./settings-manager": {
-      "types": "./settings-manager/index.d.ts",
-      "import": "./settings-manager/index.mjs",
-      "require": "./settings-manager/index.js"
+      "types": "./dist/settings-manager/index.d.ts",
+      "import": "./dist/settings-manager/index.mjs",
+      "require": "./dist/settings-manager/index.js"
     },
     "./middleware": {
-      "types": "./middleware/index.d.ts",
-      "import": "./middleware/index.mjs",
-      "require": "./middleware/index.js"
+      "types": "./dist/middleware/index.d.ts",
+      "import": "./dist/middleware/index.mjs",
+      "require": "./dist/middleware/index.js"
     },
     "./urls": {
-      "types": "./urls.d.ts",
-      "import": "./urls.mjs",
-      "require": "./urls.js"
+      "types": "./dist/urls.d.ts",
+      "import": "./dist/urls.mjs",
+      "require": "./dist/urls.js"
     },
     "./app-bridge": {
-      "types": "./app-bridge/index.d.ts",
-      "import": "./app-bridge/index.mjs",
-      "require": "./app-bridge/index.js"
+      "types": "./dist/app-bridge/index.d.ts",
+      "import": "./dist/app-bridge/index.mjs",
+      "require": "./dist/app-bridge/index.js"
     },
     "./app-bridge/next": {
-      "types": "./app-bridge/next/index.d.ts",
-      "import": "./app-bridge/next/index.mjs",
-      "require": "./app-bridge/next/index.js"
+      "types": "./dist/app-bridge/next/index.d.ts",
+      "import": "./dist/app-bridge/next/index.mjs",
+      "require": "./dist/app-bridge/next/index.js"
     },
     "./util": {
-      "types": "./util/index.d.ts",
-      "import": "./util/index.mjs",
-      "require": "./util/index.js"
+      "types": "./dist/util/index.d.ts",
+      "import": "./dist/util/index.mjs",
+      "require": "./dist/util/index.js"
     },
     "./handlers/next": {
-      "types": "./handlers/next/index.d.ts",
-      "import": "./handlers/next/index.mjs",
-      "require": "./handlers/next/index.js"
+      "types": "./dist/handlers/next/index.d.ts",
+      "import": "./dist/handlers/next/index.mjs",
+      "require": "./dist/handlers/next/index.js"
     },
     "./saleor-app": {
-      "types": "./saleor-app.d.ts",
-      "import": "./saleor-app.mjs",
-      "require": "./saleor-app.js"
+      "types": "./dist/saleor-app.d.ts",
+      "import": "./dist/saleor-app.mjs",
+      "require": "./dist/saleor-app.js"
     },
     "./infer-webhooks": {
-      "types": "./infer-webhooks.d.ts",
-      "import": "./infer-webhooks.mjs",
-      "require": "./infer-webhooks.js"
+      "types": "./dist/infer-webhooks.d.ts",
+      "import": "./dist/infer-webhooks.mjs",
+      "require": "./dist/infer-webhooks.js"
     }
   },
   "publishConfig": {

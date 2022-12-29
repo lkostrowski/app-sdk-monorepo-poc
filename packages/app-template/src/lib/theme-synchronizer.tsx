@@ -1,6 +1,7 @@
-import { useAppBridge } from "@saleor/app-sdk/app-bridge";
 import { useTheme } from "@saleor/macaw-ui";
 import { memo, useEffect } from "react";
+import { useAppBridge } from "@saleor/app-sdk-react";
+
 
 /**
  * Macaw-ui stores its theme mode in memory and local storage. To synchronize App with Dashboard,

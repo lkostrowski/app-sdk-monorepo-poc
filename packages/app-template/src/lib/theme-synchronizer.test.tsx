@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
-import { AppBridgeState } from "@saleor/app-sdk/app-bridge";
 import { render, waitFor } from "@testing-library/react";
 import { ThemeSynchronizer } from "./theme-synchronizer";
+import { AppBridgeState } from "@saleor/app-sdk/app-bridge";
 
 const appBridgeState: AppBridgeState = {
   ready: true,

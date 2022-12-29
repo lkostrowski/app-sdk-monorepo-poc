@@ -1,6 +1,8 @@
-import { SALEOR_AUTHORIZATION_BEARER_HEADER, SALEOR_DOMAIN_HEADER } from "../const";
+import {
+  SALEOR_AUTHORIZATION_BEARER_HEADER,
+  SALEOR_DOMAIN_HEADER,
+} from "../const";
 import { AppBridge } from "./app-bridge";
-import { useAppBridge } from "./app-bridge-provider";
 
 type HasAppBridgeState = Pick<AppBridge, "getState">;
 
@@ -27,12 +29,3 @@ export const createAuthenticatedFetch =
 /**
  * Hook working only in browser context. Ensure parent component is dynamic() and mounted in the browser.
  */
-export const useAuthenticatedFetch = (fetch = global.fetch) => {
-  const { appBridge } = useAppBridge();
-
-  if (!appBridge) {
-    throw new Error("useAuthenticatedFetch can be used only in browser context");
-  }
-
-  return createAuthenticatedFetch(appBridge, fetch);
-};

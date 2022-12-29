@@ -9,7 +9,11 @@
       "outputs": []
     },
     "dev": {
-      "cache": false
+      "cache": false,
+      "outputs": ["dist/**", ".next/**"]
+    },
+    "saleor-app-template:dev": {
+      "dependsOn": ["^build"]
     }
   }
 }
