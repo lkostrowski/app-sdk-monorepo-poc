@@ -1,7 +1,7 @@
 import { NextApiHandler, NextApiRequest, NextApiResponse } from "next";
 
-import { APL } from "../../APL";
-import { createDebug } from "../../debug";
+import { APL } from "@saleor/app-sdk-react";
+import { createDebug } from "@saleor/util";
 import { ProtectedHandlerContext } from "./process-async-saleor-webhook";
 import {
   processSaleorProtectedHandler,

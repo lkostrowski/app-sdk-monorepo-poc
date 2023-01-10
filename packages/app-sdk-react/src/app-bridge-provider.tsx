@@ -1,10 +1,11 @@
-import debugPkg from "debug";
+
 import * as React from "react";
 import { useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { AppBridge, AppBridgeState } from "@saleor/app-sdk/app-bridge";
+import { createDebug } from "@saleor/util";
 
 
-const debug = debugPkg.debug("app-sdk:AppBridgeProvider");
+const debug =createDebug("AppBridgeProvider");
 
 interface AppBridgeContext {
   /**

@@ -1,4 +1,4 @@
-import debugPkg from "debug";
+import { createDebug } from "@saleor/util";
 
 import { LocaleCode } from "../locales";
 import { Actions, actions } from "./actions";
@@ -14,7 +14,7 @@ type SubscribeMap = {
   [type in EventType]: Record<symbol, EventCallback<PayloadOfEvent<type>>>;
 };
 
-const debug = debugPkg.debug("app-sdk:AppBridge");
+const debug = createDebug("AppBridge");
 
 function eventStateReducer(state: AppBridgeState, event: Events) {
   debug("Event reducer received event: %j", event);

@@ -1,3 +1,3 @@
-import { createDebug } from "../debug";
+import { createDebug, Debugger } from "@saleor/util";
 
-export const createAPLDebug = (namespace: string) => createDebug(`APL:${namespace}`);
+export const createAPLDebug = (namespace: string): Debugger => createDebug(`APL:${namespace}`);

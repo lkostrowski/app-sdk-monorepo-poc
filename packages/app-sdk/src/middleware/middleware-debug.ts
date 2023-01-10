@@ -1,11 +1,13 @@
 import { Middleware } from "retes";
 
-import { createDebug } from "../debug";
+import { createDebug, Debugger } from "@saleor/util";
 
-export const createMiddlewareDebug = (middleware: string) =>
+export const createMiddlewareDebug = (middleware: string): Debugger =>
   createDebug(`Middleware:${middleware}`);
 
-type DebugFactory = (handlerName: string) => (msg: string, ...args: unknown[]) => void;
+type DebugFactory = (
+  handlerName: string
+) => (msg: string, ...args: unknown[]) => void;
 
 /**
  * Experimental. Needs to be tested and evaluated on security

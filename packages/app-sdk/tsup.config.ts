@@ -2,10 +2,8 @@ import { defineConfig } from "tsup";
 
 export default defineConfig({
   entry: [
-    "src/const.ts",
     "src/index.ts",
     "src/browser.ts",
-    "src/types.ts",
     "src/urls.ts",
     "src/headers.ts",
     "src/saleor-app.ts",

@@ -3,7 +3,7 @@ import { toNextHandler } from "retes/adapter";
 import { Response } from "retes/response";
 
 import { withBaseURL } from "../../middleware";
-import { AppManifest } from "../../types";
+import { AppManifest } from "@saleor/app-sdk-react";
 
 export type CreateManifestHandlerOptions = {
   manifestFactory(context: { appBaseUrl: string }): AppManifest | Promise<AppManifest>;

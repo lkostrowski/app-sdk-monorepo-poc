@@ -1,9 +1,9 @@
 import { NextApiRequest } from "next";
 import getRawBody from "raw-body";
 
-import { APL } from "../../APL";
-import { AuthData } from "../../APL/apl";
-import { createDebug } from "../../debug";
+import { APL } from "@saleor/app-sdk-react";
+import { AuthData } from "@saleor/app-sdk-react";
+import { createDebug } from "@saleor/util";
 import { getBaseUrl, getSaleorHeaders } from "../../headers";
 import { verifySignature, verifySignatureFromApiUrl } from "../../verify-signature";
 

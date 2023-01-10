@@ -1,8 +1,8 @@
 import { NextApiRequest } from "next";
 
-import { APL } from "../../APL";
-import { AuthData } from "../../APL/apl";
-import { createDebug } from "../../debug";
+import { APL } from "@saleor/app-sdk-react";
+import { AuthData } from "@saleor/app-sdk-react";
+import { createDebug } from "@saleor/util";
 import { getAppId } from "../../get-app-id";
 import { getBaseUrl, getSaleorHeaders } from "../../headers";
 import { verifyJWT } from "../../verify-jwt";

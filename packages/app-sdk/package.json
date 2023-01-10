@@ -80,11 +80,6 @@
       "import": "./dist/browser.mjs",
       "require": "./dist/browser.js"
     },
-    "./const": {
-      "types": "./dist/const.d.ts",
-      "import": "./dist/const.mjs",
-      "require": "./dist/const.js"
-    },
     "./APL": {
       "types": "./dist/APL/index.d.ts",
       "import": "./dist/APL/index.mjs",
