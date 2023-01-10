@@ -2,9 +2,9 @@ import { NextApiRequest } from "next/types";
 import { createMocks } from "node-mocks-http";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
-import { APL } from "../../APL";
-import { getAppId } from "../../get-app-id";
-import { verifyJWT } from "../../verify-jwt";
+import { APL } from "@saleor/app-sdk-react";
+import { getAppId } from "@saleor/app-sdk-react";
+import { verifyJWT } from "@saleor/app-sdk-react";
 import { processSaleorProtectedHandler } from "./process-protected-handler";
 
 const validToken =
@@ -12,13 +12,9 @@ const validToken =
 
 const validAppId = "QXBwOjI3NQ==";
 
-vi.mock("./../../get-app-id", () => ({
+vi.mock("@saleor/app-sdk-react", () => ({
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   getAppId: vi.fn(),
-}));
-
-vi.mock("./../../verify-jwt", () => ({
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   verifyJWT: vi.fn(),
 }));
 

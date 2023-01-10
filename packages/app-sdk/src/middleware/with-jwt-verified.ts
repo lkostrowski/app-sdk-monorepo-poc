@@ -5,13 +5,12 @@ import { Response } from "retes/response";
 import { SALEOR_AUTHORIZATION_BEARER_HEADER, SALEOR_DOMAIN_HEADER } from "../const";
 import { getSaleorHeaders } from "../headers";
 import { getJwksUrl } from "../urls";
+import { DashboardTokenPayload } from "../verify-jwt";
 import { createMiddlewareDebug } from "./middleware-debug";
 
 const debug = createMiddlewareDebug("withJWTVerified");
 
-export interface DashboardTokenPayload extends jose.JWTPayload {
-  app: string;
-}
+
 
 const ERROR_MESSAGE = "JWT verification failed:";
 

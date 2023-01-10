@@ -2,7 +2,7 @@ import { Handler } from "retes";
 import { toNextHandler } from "retes/adapter";
 import { Response } from "retes/response";
 
-import { withBaseURL } from "../../middleware";
+import { withBaseURL } from "@saleor/app-sdk-react";
 import { AppManifest } from "@saleor/app-sdk-react";
 
 export type CreateManifestHandlerOptions = {

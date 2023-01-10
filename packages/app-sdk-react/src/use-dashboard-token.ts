@@ -3,10 +3,9 @@ import { useMemo } from "react";
 import { createDebug } from "@saleor/util";
 
 import { useAppBridge } from "./app-bridge-provider";
+import { DashboardTokenPayload } from "@saleor/app-sdk";
 
-export interface DashboardTokenPayload extends jose.JWTPayload {
-  app: string;
-}
+
 
 export interface DashboardTokenProps {
   isTokenValid: boolean;

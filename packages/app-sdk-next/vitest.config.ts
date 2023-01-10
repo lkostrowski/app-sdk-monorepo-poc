@@ -1,4 +1,5 @@
 import react from "@vitejs/plugin-react";
+// @ts-ignore todo
 import { defineConfig } from "vitest/config";
 
 // https://vitejs.dev/config/

@@ -3,7 +3,7 @@ import { NextApiHandler, NextApiRequest, NextApiResponse } from "next";
 
 import { APL } from "@saleor/app-sdk-react";
 import { createDebug } from "@saleor/util";
-import { gqlAstToString } from "../../gql-ast-to-string";
+import { gqlAstToString } from "@saleor/app-sdk-react";
 import { WebhookEvent, WebhookManifest } from "@saleor/app-sdk-react";
 import {
   processAsyncSaleorWebhook,

@@ -4,8 +4,8 @@ import getRawBody from "raw-body";
 import { APL } from "@saleor/app-sdk-react";
 import { AuthData } from "@saleor/app-sdk-react";
 import { createDebug } from "@saleor/util";
-import { getBaseUrl, getSaleorHeaders } from "../../headers";
-import { verifySignature, verifySignatureFromApiUrl } from "../../verify-signature";
+import { getBaseUrl, getSaleorHeaders } from "@saleor/app-sdk-react";
+import { verifySignature, verifySignatureFromApiUrl } from "@saleor/app-sdk-react";
 
 const debug = createDebug("processAsyncWebhook");
 

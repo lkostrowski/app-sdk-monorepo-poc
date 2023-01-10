@@ -5,8 +5,8 @@ import { Response } from "retes/response";
 import {createDebug} from "@saleor/util"
 
 import { SALEOR_DOMAIN_HEADER } from "@saleor/app-sdk-react";
-import { getAppId } from "../../get-app-id";
-import { withAuthTokenRequired, withSaleorDomainPresent } from "../../middleware";
+import { getAppId } from "@saleor/app-sdk-react";
+import { withAuthTokenRequired, withSaleorDomainPresent } from "@saleor/app-sdk-react";
 import { HasAPL } from "@saleor/app-sdk-react"
 
 const debug = createDebug("createAppRegisterHandler");

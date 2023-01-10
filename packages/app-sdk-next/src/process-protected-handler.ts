@@ -3,9 +3,9 @@ import { NextApiRequest } from "next";
 import { APL } from "@saleor/app-sdk-react";
 import { AuthData } from "@saleor/app-sdk-react";
 import { createDebug } from "@saleor/util";
-import { getAppId } from "../../get-app-id";
-import { getBaseUrl, getSaleorHeaders } from "../../headers";
-import { verifyJWT } from "../../verify-jwt";
+import { getAppId } from "@saleor/app-sdk-react";
+import { getBaseUrl, getSaleorHeaders } from "@saleor/app-sdk-react";
+import { verifyJWT } from "@saleor/app-sdk-react";
 
 const debug = createDebug("processProtectedHandler");
 

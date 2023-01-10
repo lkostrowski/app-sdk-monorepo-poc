@@ -3,10 +3,10 @@ import { createMocks } from "node-mocks-http";
 import rawBody from "raw-body";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-import { APL } from "../../APL";
+import { APL } from "@saleor/app-sdk-react";
 import { processAsyncSaleorWebhook } from "./process-async-saleor-webhook";
 
-vi.mock("./../../verify-signature", () => ({
+vi.mock("@saleor/app-sdk-react", () => ({
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   verifySignature: vi.fn((domain, signature) => {
     if (signature !== "mocked_signature") {
