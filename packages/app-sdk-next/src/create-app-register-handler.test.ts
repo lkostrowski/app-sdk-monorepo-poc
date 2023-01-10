@@ -1,7 +1,7 @@
 import { createMocks } from "node-mocks-http";
 import { describe, expect, it, vi } from "vitest";
+import {APL} from "@saleor/app-sdk-react"
 
-import { APL } from "../../APL";
 import { createAppRegisterHandler } from "./create-app-register-handler";
 
 describe("create-app-register-handler", () => {

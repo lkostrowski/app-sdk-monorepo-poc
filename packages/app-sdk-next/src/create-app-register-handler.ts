@@ -3,7 +3,7 @@ import { toNextHandler } from "retes/adapter";
 import { withMethod } from "retes/middleware";
 import { Response } from "retes/response";
 
-import { SALEOR_DOMAIN_HEADER } from "../../const";
+import { SALEOR_DOMAIN_HEADER } from "@saleor/app-sdk-react";
 import { createDebug } from "../../debug";
 import { getAppId } from "../../get-app-id";
 import { withAuthTokenRequired, withSaleorDomainPresent } from "../../middleware";

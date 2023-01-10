@@ -14,6 +14,7 @@
     },
     "saleor-app-template:dev": {
       "dependsOn": ["^build"]
-    }
+    },
+    "test": {}
   }
 }
