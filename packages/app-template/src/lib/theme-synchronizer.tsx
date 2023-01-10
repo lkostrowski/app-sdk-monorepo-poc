@@ -1,6 +1,6 @@
 import { useTheme } from "@saleor/macaw-ui";
 import { memo, useEffect } from "react";
-import { useAppBridge } from "@saleor/app-sdk-react";
+import { useAppBridge } from "@saleor/app-sdk-next";
 
 
 /**

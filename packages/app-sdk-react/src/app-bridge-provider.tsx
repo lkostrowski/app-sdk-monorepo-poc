@@ -1,7 +1,7 @@
 
 import * as React from "react";
 import { useCallback, useContext, useEffect, useMemo, useState } from "react";
-import { AppBridge, AppBridgeState } from "@saleor/app-sdk/app-bridge";
+import { AppBridge, AppBridgeState } from "@saleor/app-sdk/browser";
 import { createDebug } from "@saleor/util";
 
 

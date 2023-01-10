@@ -1,5 +1,5 @@
-import { createManifestHandler } from "@saleor/app-sdk/handlers/next";
-import { AppManifest } from "@saleor/app-sdk/types";
+
+import { AppManifest, createManifestHandler } from "@saleor/app-sdk-next";
 
 import packageJson from "../../../package.json";
 

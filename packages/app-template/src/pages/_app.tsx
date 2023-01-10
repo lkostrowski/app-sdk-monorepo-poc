@@ -7,10 +7,7 @@ import { AppProps } from "next/app";
 
 import GraphQLProvider from "../providers/GraphQLProvider";
 import { ThemeSynchronizer } from "../lib/theme-synchronizer";
-import { AppBridge } from "@saleor/app-sdk/app-bridge";
-import { RoutePropagator } from "@saleor/app-sdk-next";
-import { AppBridgeProvider } from "@saleor/app-sdk-react";
-
+import { AppBridge, AppBridgeProvider, RoutePropagator } from "@saleor/app-sdk-next";
 
 const themeOverrides: Partial<Theme> = {
   /**

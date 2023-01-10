@@ -2,12 +2,12 @@ import type { Handler } from "retes";
 import { toNextHandler } from "retes/adapter";
 import { withMethod } from "retes/middleware";
 import { Response } from "retes/response";
-import {createDebug} from "@saleor/util"
+import { createDebug } from "@saleor/util";
 
 import { SALEOR_DOMAIN_HEADER } from "@saleor/app-sdk-react";
 import { getAppId } from "@saleor/app-sdk-react";
 import { withAuthTokenRequired, withSaleorDomainPresent } from "@saleor/app-sdk-react";
-import { HasAPL } from "@saleor/app-sdk-react"
+import { HasAPL } from "@saleor/app-sdk-react/node"
 
 const debug = createDebug("createAppRegisterHandler");
 

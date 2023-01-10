@@ -1,4 +1,4 @@
-import { useAppBridge } from "@saleor/app-sdk/app-bridge";
+import { useAppBridge } from "@saleor/app-sdk-react";
 import { Button } from "@saleor/macaw-ui";
 
 /**

@@ -2,7 +2,7 @@ import { PropsWithChildren } from "react";
 import { Provider } from "urql";
 
 import { createClient } from "../lib/graphql";
-import { useAppBridge } from "@saleor/app-sdk-react";
+import { useAppBridge } from "@saleor/app-sdk-next";
 
 function GraphQLProvider(props: PropsWithChildren<{}>) {
   const { appBridgeState } = useAppBridge();
