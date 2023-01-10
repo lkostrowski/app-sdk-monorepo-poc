@@ -18,3 +18,4 @@ export const useAuthenticatedFetch = (fetch = global.fetch) => {
 
 export * from "@saleor/app-sdk";
 export * from "@saleor/app-sdk/browser";
+export * from './use-is-mounted'

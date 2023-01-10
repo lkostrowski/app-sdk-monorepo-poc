@@ -1,5 +1,5 @@
 import { AuthData } from "./APL";
-import { createDebug } from "./debug";
+import { createDebug } from "@saleor/util";
 
 const debug = createDebug("getAppId");
 

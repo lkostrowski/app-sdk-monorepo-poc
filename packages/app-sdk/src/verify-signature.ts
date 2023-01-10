@@ -1,6 +1,6 @@
 import * as jose from "jose";
 
-import { createDebug } from "./debug";
+import { createDebug } from "@saleor/util";
 import { getJwksUrl, getJwksUrlFromSaleorApiUrl } from "./urls";
 
 const debug = createDebug("verify-signature");

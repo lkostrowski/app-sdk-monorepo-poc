@@ -1,3 +1,3 @@
-import debugPkg from "debug";
+import * as debugPkg from "debug";
 
 export const createDebug = (namespace: string) => debugPkg.debug(`app-sdk:${namespace}`);

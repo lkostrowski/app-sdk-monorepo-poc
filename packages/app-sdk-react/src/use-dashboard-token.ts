@@ -1,6 +1,6 @@
-import debugPkg from "debug";
 import * as jose from "jose";
 import { useMemo } from "react";
+import { createDebug } from "@saleor/util";
 
 import { useAppBridge } from "./app-bridge-provider";
 
@@ -14,7 +14,7 @@ export interface DashboardTokenProps {
   tokenClaims: DashboardTokenPayload | null;
 }
 
-const debug = debugPkg.debug("app-sdk:AppBridge:useDashboardToken");
+const debug = createDebug("AppBridge:useDashboardToken");
 
 export const useDashboardToken = (): DashboardTokenProps => {
   const { appBridgeState } = useAppBridge();
