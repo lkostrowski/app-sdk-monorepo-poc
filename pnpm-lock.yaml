@@ -106,11 +106,9 @@ importers:
       vi-fetch: 0.8.0
       vite: 3.2.5_@types+node@18.11.18
       vitest: 0.25.8_jsdom@20.0.3
-    publishDirectory: dist
 
   packages/app-sdk-next:
     specifiers:
-      '@saleor/app-sdk': workspace:*
       '@saleor/app-sdk-react': workspace:*
       '@testing-library/dom': ^8.17.1
       '@testing-library/react': ^13.4.0
@@ -158,7 +156,6 @@ importers:
       vite: ^3.2.5
       vitest: ^0.25.6
     dependencies:
-      '@saleor/app-sdk': link:../app-sdk
       '@saleor/app-sdk-react': link:../app-sdk-react
       debug: 4.3.4
       fast-glob: 3.2.12
@@ -206,7 +203,6 @@ importers:
       vi-fetch: 0.8.0
       vite: 3.2.5_@types+node@18.11.18
       vitest: 0.25.8_jsdom@20.0.3
-    publishDirectory: dist
 
   packages/app-sdk-react:
     specifiers:
@@ -304,7 +300,6 @@ importers:
       vi-fetch: 0.8.0
       vite: 3.2.5_@types+node@18.11.18
       vitest: 0.25.8_jsdom@20.0.3
-    publishDirectory: dist
 
   packages/app-template:
     specifiers:
@@ -319,9 +314,7 @@ importers:
       '@material-ui/core': ^4.12.4
       '@material-ui/icons': ^4.11.3
       '@material-ui/lab': 4.0.0-alpha.61
-      '@saleor/app-sdk': workspace:*
       '@saleor/app-sdk-next': workspace:*
-      '@saleor/app-sdk-react': workspace:*
       '@saleor/macaw-ui': ^0.7.0
       '@testing-library/react': ^13.4.0
       '@testing-library/react-hooks': ^8.0.1
@@ -348,9 +341,7 @@ importers:
       '@material-ui/core': 4.12.4_ib3m5ricvtkl2cll7qpr2f6lvq
       '@material-ui/icons': 4.11.3_do6jtu5bwlvlflxw6cggb7lxsi
       '@material-ui/lab': 4.0.0-alpha.61_do6jtu5bwlvlflxw6cggb7lxsi
-      '@saleor/app-sdk': link:../app-sdk
       '@saleor/app-sdk-next': link:../app-sdk-next
-      '@saleor/app-sdk-react': link:../app-sdk-react
       '@saleor/macaw-ui': 0.7.1_ushc7t6wkobdy4akuvezsbxqvu
       '@urql/exchange-auth': 1.0.0_graphql@16.6.0
       '@vitejs/plugin-react': 3.0.0_vite@4.0.3

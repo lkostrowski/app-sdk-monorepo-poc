@@ -2,8 +2,7 @@ import { NextPage } from "next";
 import * as React from "react";
 import { PropsWithChildren, ReactNode } from "react";
 
-import { useDashboardToken } from "@saleor/app-sdk-react";
-import { isInIframe, useIsMounted } from "@saleor/app-sdk/util";
+import { useDashboardToken, useIsMounted, isInIframe } from "@saleor/app-sdk-react";
 
 function SimpleError({ children }: PropsWithChildren<{}>) {
   return (

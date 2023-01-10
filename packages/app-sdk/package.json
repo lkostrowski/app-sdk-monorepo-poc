@@ -5,7 +5,7 @@
   "scripts": {
     "prepublishOnly": "pnpm build",
     "dev": "tsup --watch",
-    "build": "tsup && clear-package-json package.json -o dist/package.json --fields publishConfig",
+    "build": "tsup",
     "clean": "rm -rf ./dist/*",
     "test": "vitest",
     "test:ci": "CI=true vitest --coverage",
@@ -13,7 +13,7 @@
     "release": "release-it",
     "copy-readme": "cp README.md dist/README.md"
   },
-  "publishConfig": {
+  "//": {
     "registry": "http://localhost:4873"
   },
   "keywords": [],
@@ -79,6 +79,16 @@
   },
   "exports": {
     "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./browser": {
+      "types": "./dist/browser.d.ts",
+      "import": "./dist/browser.mjs",
+      "require": "./dist/browser.js"
+    },
     "./const": {
       "types": "./dist/const.d.ts",
       "import": "./dist/const.mjs",

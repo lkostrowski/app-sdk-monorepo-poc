@@ -3,8 +3,8 @@
  */
 import { useRouter } from "next/router.js";
 import { useEffect } from "react";
-import { actions } from "@saleor/app-sdk/app-bridge";
-import { useAppBridge } from "@saleor/app-sdk-react";
+
+import { useAppBridge, actions } from "@saleor/app-sdk-react";
 
 /**
  * Synchronizes app inner state (inside iframe) with dashboard routing, so app's route can be restored after refresh

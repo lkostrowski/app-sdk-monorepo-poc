@@ -8,8 +8,13 @@ export const useAuthenticatedFetch = (fetch = global.fetch) => {
   const { appBridge } = useAppBridge();
 
   if (!appBridge) {
-    throw new Error("useAuthenticatedFetch can be used only in browser context");
+    throw new Error(
+      "useAuthenticatedFetch can be used only in browser context"
+    );
   }
 
   return createAuthenticatedFetch(appBridge, fetch);
 };
+
+export * from "@saleor/app-sdk";
+export * from "@saleor/app-sdk/browser";

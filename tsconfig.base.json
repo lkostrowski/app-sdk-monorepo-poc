@@ -1,9 +1,14 @@
 {
+  "include": ["packages"],
   "compilerOptions": {
+    "traceResolution": true,
+    //"baseUrl": ".",
     "paths": {
       "@saleor/app-sdk": ["./packages/app-sdk"],
+      "@saleor/app-sdk/APL": ["./packages/app-sdk/APL"],
+      "@saleor/app-sdk/*": ["./packages/app-sdk/*"],
       "@saleor/app-sdk-react": ["./packages/app-sdk-react"],
-      "@saleor/app-sdk-next": ["./packages/app-sdk-next"],
+      "@saleor/app-sdk-next": ["./packages/app-sdk-next"]
     }
   }
 }
