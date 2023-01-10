@@ -135,10 +135,6 @@
       "require": "./dist/infer-webhooks.js"
     }
   },
-  "publishConfig": {
-    "access": "public",
-    "directory": "dist"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saleor/saleor-app-sdk.git"

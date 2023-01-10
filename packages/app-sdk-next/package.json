@@ -89,10 +89,6 @@
       "require": "./dist/index.js"
     }
   },
-  "publishConfig": {
-    "access": "public",
-    "directory": "dist"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saleor/saleor-app-sdk.git"
